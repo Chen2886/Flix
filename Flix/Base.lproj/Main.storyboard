@@ -104,7 +104,7 @@
             </objects>
             <point key="canvasLocation" x="489" y="-861"/>
         </scene>
-        <!--SuperHero-->
+        <!--Movie Grid View Controller-->
         <scene sceneID="pFU-7Z-snJ">
             <objects>
                 <viewController id="aZT-H7-e6l" customClass="MovieGridViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
@@ -116,6 +116,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <gestureRecognizers/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MgA-xn-ujs">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -139,15 +140,17 @@
                                         <size key="customSize" width="125" height="215"/>
                                         <connections>
                                             <outlet property="posterView" destination="CeP-zE-J8C" id="gUP-rb-wZS"/>
+                                            <segue destination="Y3i-8D-bQb" kind="show" identifier="CollectionSeg" id="SFS-Uz-TjA"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="fsU-9D-EqD"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SuperHero" id="MsH-Ha-607"/>
+                    <navigationItem key="navigationItem" id="MsH-Ha-607"/>
                     <connections>
                         <outlet property="collectionView" destination="IMR-gr-wtc" id="6EH-Nm-bIs"/>
                     </connections>
@@ -226,13 +229,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wq-Jq-NAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2.3999999999999999" y="1304.9261083743843"/>
+            <point key="canvasLocation" x="399" y="1428"/>
         </scene>
-        <!--Super Hero-->
+        <!--Search-->
         <scene sceneID="8k6-lD-ktp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IUV-mr-3j4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Super Hero" image="superhero_tabbar_item" selectedImage="superhero_tabbar_item" id="0et-Q0-cMY"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="superhero_tabbar_item" id="0et-Q0-cMY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="512-Gk-BRA">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -249,7 +252,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SFS-Uz-TjA"/>
+    </inferredMetricsTieBreakers>
 </document>
