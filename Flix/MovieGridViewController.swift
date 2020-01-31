@@ -53,6 +53,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(movies.count)
         return movies.count
     }
     
@@ -73,7 +74,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
         
         text = text?.replacingOccurrences(of: " ", with: "%20")
     
-        let url = URL(string: "https://api.themoviedb.org/3/search/movie?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US&query=" + (text ?? "") + "&page=1&include_adult=true")!
+        let url = URL(string: "https://api.themoviedb.org/3/search/movie?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US&query=" + (text ?? "") + "&include_adult=true")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
