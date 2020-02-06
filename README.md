@@ -61,7 +61,7 @@ The following **stretch** user stories are implemented:
 The following **additional** user stories are implemented:
 
 - [x] List anything else that you can get done to improve the app functionality! (+1-3pts)
--     Added a search functionality
+- Added a search functionality
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
@@ -70,7 +70,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2020] [Nuo (Tony) Chen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
