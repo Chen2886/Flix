@@ -50,28 +50,23 @@ Time spent: **X** hours spent in total
 The following **required** user stories are complete:
 
 - The following screens use AutoLayout to adapt to various orientations and screen sizes
-   - [ ] Movie feed view (+3pt)
-   - [ ] Detail view (+2pt)
+   - [x] Movie feed view (+3pt)
+   - [x] Detail view (+2pt)
 
 The following **stretch** user stories are implemented:
 
-- [ ] Dynamic Height Cells (+1)
-- [ ] Collection View AutoLayout (+2)
+- [x] Dynamic Height Cells (+1)
+- [x] Collection View AutoLayout (+2)
 
 The following **additional** user stories are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
+- [x] List anything else that you can get done to improve the app functionality! (+1-3pts)
+      Added a search functionality
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+1. Collection view's size should be better
+2. Collection view's portrait should be fixed
 
 ## License
 
