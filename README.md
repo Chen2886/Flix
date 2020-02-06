@@ -70,7 +70,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 ## License
 
-    Copyright [2020] [Nuo (Tony) Chen]
+    Copyright 2020 Nuo (Tony) Chen
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
